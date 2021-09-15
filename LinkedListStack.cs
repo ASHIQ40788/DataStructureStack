@@ -25,8 +25,50 @@ namespace Stack
             Console.WriteLine("New node {0} is added", newNode.data);
         }
 
-           // Displaying the values in the stack
-      
+        //UC2  Displaying the top element
+
+        public void Peek()
+        {
+            //Checking if top element is null
+            //otherwise printing the top element
+            if (this.top == null)
+            {
+                Console.WriteLine("no element present to Peek");
+                return;
+            }
+            Console.WriteLine("Top most element " + this.top.data);
+        }
+
+
+
+        /// UC2 Displaying and Deleting the top element
+
+        public void Pop()
+        {
+            ///Checking if top element is null
+            ///otherwise printing the top element and deleting it also
+            if (this.top == null)
+            {
+                Console.WriteLine("no element present to Pop");
+                return;
+            }
+            //Console.WriteLine("The element poped is " + this.top.data);
+            int deleteNode = this.top.data;
+            Peek();
+            this.top = this.top.next;
+            Console.WriteLine("Deleted element is {0}", deleteNode);
+        }
+
+        public void IsEmpty()
+        {
+            while (this.top != null)
+            {
+                Pop();
+            }
+        }
+
+        // Displaying the values in the stack
+
         public void Display()
         {
             ///checking if stack is not empty

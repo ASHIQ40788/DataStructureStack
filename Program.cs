@@ -22,12 +22,18 @@ namespace Stack
             //}
             //Console.ReadKey();
 
+
+            //UC1 Pushing Data.
             LinkedListStack stack = new LinkedListStack();
             stack.Push(70);
             stack.Push(30);
             stack.Push(56);
-            
-            
+
+            //UC2 Peek,Pop, and Isempty
+            stack.Peek();
+            stack.Pop();
+            stack.IsEmpty();
+            stack.Display();
             Console.ReadLine();
             
 
