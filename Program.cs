@@ -10,7 +10,27 @@ namespace Stack
     {
         static void Main(string[] args)
         {
-            //Welcome to Stack linked list.
+            //Stack
+            //Stack<int> stack = new Stack<int>();
+            //stack.Push(70);
+            //stack.Push(30);
+            //stack.Push(56);
+            //foreach (int n in stack)
+            //{
+            //    Console.WriteLine(n);
+
+            //}
+            //Console.ReadKey();
+
+            LinkedListStack stack = new LinkedListStack();
+            stack.Push(70);
+            stack.Push(30);
+            stack.Push(56);
+            
+            
+            Console.ReadLine();
+            
+
         }
     }
 }
